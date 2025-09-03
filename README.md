@@ -17,6 +17,8 @@ Switch between chat and agent (which executes commands like bot_add for example)
 @grokadmin to trigger admin specific commands as opposed to @grok which triggers a response to an input prompt
 
 
+Feel free to edit the system prompt, MechaGrok can return.
+
 ## Features
 
 ### 🗣️ **Smart Chat Mode**

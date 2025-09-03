@@ -1,0 +1,22 @@
+# Build and output directories
+bin/
+obj/
+.vs/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Environment files
+.env
+*.env.*
+
+# Debug logs
+*.log
+*.ncrunchsolution
+*.ncrunchproject
+
+# Local development files
+launchSettings.json

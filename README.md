@@ -10,7 +10,11 @@ GROK_API_URL=https://openrouter.ai/api/v1/chat/completions
 Model=meta-llama/llama-3.3-8b-instruct:free
 
 
+THERE ARE ADMIN ONLY COMMANDS, PLEASE CONFIGURE YOUR LIST OF ADMINS SUCH THAT THEY CAN RUN THESE COMMANDS
 
+ADMINS CAN ENABLE/DISABLE Grok
+Switch between chat and agent (which executes commands like bot_add for example) using "grok_mode"
+@grokadmin to trigger admin specific commands as opposed to @grok which triggers a response to an input prompt
 
 
 ## Features
@@ -19,6 +23,7 @@ Model=meta-llama/llama-3.3-8b-instruct:free
 - Regular conversation with players
 - **Context-aware tool usage** - the AI can choose when to use tools based on the conversation
 - No need to switch modes - the AI decides intelligently
+- Grok has access to game events and will sometimes make fun of your lack of kills.
 
 ### 🛠️ **Flexible Tool System**
 - **Chained actions** - execute multiple commands in sequence

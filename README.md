@@ -1,5 +1,6 @@
 # Grok Plugin for CS2
 
+**STRONGLY RECOMMEND HOSTING ON OPENROUTER - MANY FREE APIs AVAILABLE RIGHT NOW**
 An intelligent AI assistant plugin for Counter-Strike 2 servers that can chat with players and execute server commands using natural language.
 
 ## Features

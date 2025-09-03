@@ -3,6 +3,16 @@
 **STRONGLY RECOMMEND HOSTING ON OPENROUTER - MANY FREE APIs AVAILABLE RIGHT NOW**
 An intelligent AI assistant plugin for Counter-Strike 2 servers that can chat with players and execute server commands using natural language.
 
+Consider adding a .env :
+
+GROK_API_KEY=INSERTAPIKEY
+GROK_API_URL=https://openrouter.ai/api/v1/chat/completions
+Model=meta-llama/llama-3.3-8b-instruct:free
+
+
+
+
+
 ## Features
 
 ### 🗣️ **Smart Chat Mode**

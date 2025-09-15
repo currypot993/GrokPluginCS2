@@ -1,5 +1,6 @@
 using CounterStrikeSharp.API.Core;
 using CounterStrikeSharp.API.Core.Attributes.Registration;
+using CounterStrikeSharp.API.Modules.Admin;
 using CounterStrikeSharp.API.Modules.Commands;
 using Microsoft.Extensions.Logging;
 using CounterStrikeSharp.API.Core.Attributes;
@@ -905,9 +906,11 @@ public class Main : BasePlugin
 
     private bool IsAdmin(CCSPlayerController? player)
     {
-        // This is a basic check. For a real server, you'd want to integrate with a proper admin system.
-        // For now, we'll check against the whitelisted SteamIDs.
-        return player?.IsValid == true && _config?.WhitelistedSteamIds?.Contains(player.SteamID.ToString()) == true;
+        if (player == null || !player.IsValid) 
+            return false;
+            
+        // Check if player has the admin flag using CS2-SimpleAdmin's system
+        return AdminManager.PlayerHasFlag(player, AdminFlags.Admin);
     }
 
     [GameEventHandler]
